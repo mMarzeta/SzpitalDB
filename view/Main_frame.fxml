@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Menu">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu fx:id="Wybierz_menu" mnemonicParsing="false" text="Wybierz">
+                  <items>
+                    <MenuItem fx:id="adres_menuItem" mnemonicParsing="false" text="Adres" />
+                        <MenuItem mnemonicParsing="false" text="Choroba" />
+                        <MenuItem mnemonicParsing="false" text="Lek" />
+                        <MenuItem mnemonicParsing="false" text="Lekarz" />
+                        <MenuItem mnemonicParsing="false" text="Oddzial" />
+                        <MenuItem mnemonicParsing="false" text="Szpital" />
+                        <MenuItem mnemonicParsing="false" text="Uczulenie" />
+                        <MenuItem mnemonicParsing="false" text="Wizyta" />
+                        <MenuItem mnemonicParsing="false" text="Zabieg" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Raport">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Raport 1" />
+                        <MenuItem mnemonicParsing="false" text="Raport 2" />
+                        <MenuItem mnemonicParsing="false" text="Raport 3" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
