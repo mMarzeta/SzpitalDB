@@ -1,12 +1,9 @@
-package sample;
+package controller;
 
 import java.io.IOException;
 
 import db.Adres;
-import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
-import view.AdresEditController;
-import view.AdresOverviewController;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -14,10 +11,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javafx.scene.layout.Pane;
 import javafx.collections.FXCollections;
 import javafx.stage.Modality;
-import view.MenuController;
 //test
 
 public class Main extends Application {
