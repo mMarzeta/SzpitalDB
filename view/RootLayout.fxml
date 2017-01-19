@@ -15,22 +15,21 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Wybierz">
                <items>
-                  <MenuItem fx:id="adres_menuItem" mnemonicParsing="false" onAction="#handleMenuAdresButton" text="Adres" />
+                  <MenuItem fx:id="adres_menuItem" mnemonicParsing="false" onAction="#handleMenuAdres" text="Adres" />
                   <MenuItem mnemonicParsing="false" onAction="#handleMenuLek" text="Lek" />
-                  <MenuItem mnemonicParsing="false" text="Choroba" />
-                  <MenuItem mnemonicParsing="false" text="Lekarz" />
-                  <MenuItem mnemonicParsing="false" text="Oddzial" />
-                  <MenuItem mnemonicParsing="false" text="Szpital" />
-                  <MenuItem mnemonicParsing="false" text="Uczulenie" />
-                  <MenuItem mnemonicParsing="false" text="Wizyta" />
-                  <MenuItem mnemonicParsing="false" text="Zabieg" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuChoroba" text="Choroba" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuLekarz" text="Lekarz" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuOddzial" text="Oddzial" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuSzpital" text="Szpital" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuUczulenie" text="Uczulenie" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuWizyta" text="Wizyta" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuZabieg" text="Zabieg" />
+                  <MenuItem fx:id="adres_menuItem1" mnemonicParsing="false" onAction="#handleMenuPacjent" text="Pacjent" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Raport">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Raport 1" />
-                  <MenuItem mnemonicParsing="false" text="Raport 2" />
-                  <MenuItem mnemonicParsing="false" text="Raport 3" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuReportStatystyki" text="Statystyki" />
                </items>
             </Menu>
         </menus>

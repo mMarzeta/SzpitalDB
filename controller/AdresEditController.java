@@ -5,7 +5,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import db.Adres;
 
-public class AdresEditController {
+public class AdresEditController extends AbstractEditController{
 
     @FXML
     private TextField adres_id_textField;
@@ -20,29 +20,7 @@ public class AdresEditController {
     @FXML
     private TextField kod_pocztowy_textField;
 
-
-    private Stage dialogStage;
     private Adres adres;
-    private boolean okClicked = false;
-
-    /**
-     * Initializes the controller class. This method is automatically called
-     * after the fxml file has been loaded.
-     */
-    @FXML
-    private void initialize() {
-    }
-
-    /**
-     * Sets the stage of this dialog.
-     *
-     * @param dialogStage
-     */
-    public void setDialogStage(Stage dialogStage) {
-        System.out.println("setDialogStage AdresEditController");
-
-        this.dialogStage = dialogStage;
-    }
 
     /**
      * Sets the person to be edited in the dialog.
@@ -62,15 +40,6 @@ public class AdresEditController {
         this.kod_pocztowy_textField.setText(ad.getKod_pocztowy());
     }
 
-    /**
-     * Returns true if the user clicked OK, false otherwise.
-     *
-     * @return
-     */
-    public boolean isOkClicked() {
-        System.out.println("isOkClicked AdresEditController");
-        return okClicked;
-    }
 
     /**
      * Called when the user clicks ok.
@@ -94,14 +63,6 @@ public class AdresEditController {
             okClicked = true;
             dialogStage.close();
         }
-    }
-
-    /**
-     * Called when the user clicks cancel.
-     */
-    @FXML
-    private void handleCancel() {
-        dialogStage.close();
     }
 
     /**

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LekOverviewController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ScrollPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="lek_table" layoutX="-2.0" layoutY="-5.0" prefHeight="402.0" prefWidth="267.0">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <columns>
+                              <TableColumn fx:id="lek_id_table" prefWidth="132.0" text="Lek_id" />
+                              <TableColumn fx:id="lek_nazwa_table" prefWidth="140.0" text="Nazwa" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <GridPane prefHeight="294.0" prefWidth="326.0" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="66.0" text="lek_id" />
+                  <Label prefHeight="31.0" prefWidth="159.0" text="nazwa" GridPane.rowIndex="1" />
+                  <Label fx:id="lek_id_label" prefHeight="31.0" prefWidth="66.0" GridPane.columnIndex="1" />
+                  <Label fx:id="nazwa_label" prefHeight="31.0" prefWidth="151.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button mnemonicParsing="false" onAction="#handleDeleteButton" text="Delete" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="360.0" />
+            <Button mnemonicParsing="false" onAction="#handleOkButton" prefHeight="42.0" prefWidth="82.0" text="New" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="360.0" />
+            <Button mnemonicParsing="false" onAction="#handleEditButton" prefHeight="42.0" prefWidth="82.0" text="Edit" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="360.0" />
+            <Label prefHeight="31.0" prefWidth="66.0" text="Adres" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -42,7 +42,6 @@ public class AdresOverviewController {
     }
 
     public void showAdresDetails(Adres ad){
-        System.out.println("showAdresDetails AdresOvierwiecController");
         if (ad != null){
             this.adres_id_label.setText((Integer.toString(ad.getAdres_id())));
             this.wojewodztwo_label.setText(ad.getWojewodztwo());
@@ -69,7 +68,6 @@ public class AdresOverviewController {
      */
     @FXML
     private void initialize() {
-        System.out.println("initialize AdresOvierwiecController");
 
         // Initialize the person table with the two columns.
         adres_id_table.setCellValueFactory(
@@ -87,7 +85,6 @@ public class AdresOverviewController {
 
     @FXML
     private void handleDeleteButton(){
-        System.out.println("handleDeleteButton AdresOvierwiecController");
 
         int selectedIndex = adres_table.getSelectionModel().getSelectedIndex();
         if(selectedIndex >= 0){
@@ -108,7 +105,6 @@ public class AdresOverviewController {
 
     @FXML
     private void handleEditButton(){
-        System.out.println("handleEditButton AdresOvierwiecController");
 
         Adres selectedAdres = adres_table.getSelectionModel().getSelectedItem();
         if(selectedAdres != null){
@@ -132,8 +128,7 @@ public class AdresOverviewController {
 
     //nowa osoba
     @FXML
-    private void handleOkButton(){
-        System.out.println("handleOkButton AdresOvierwiecController");
+    private void handleOkButton() {
 
         Adres tempAdres = new Adres();
         boolean okClicked = mainApp.showAdresEditDialog(tempAdres);
@@ -142,8 +137,8 @@ public class AdresOverviewController {
                     tempAdres.getWojewodztwo(), tempAdres.getMiejscowosc(),
                     tempAdres.getUlica(), tempAdres.getKraj(), tempAdres.getKod_pocztowy()));
         }
-
     }
+
 
     /**
      * Is called by the main application to give a reference back to itself.
@@ -151,11 +146,9 @@ public class AdresOverviewController {
      * @param mainApp
      */
     public void setMainApp(Main mainApp) {
-        System.out.println("setMainApp AdresOvierwiecController");
 
         this.mainApp = mainApp;
 
-        // Add observable list data to the table
         adres_table.setItems(mainApp.getAdresData());
     }
 }

@@ -13,6 +13,7 @@ public abstract class Table_abstract {
     protected Connection conn;
     protected String class_name;
 
+
     public Table_abstract() {
         Statement stmt = null;
         try {

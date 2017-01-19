@@ -128,7 +128,7 @@ public class Adres extends Table_abstract {
                     + "' WHERE adres_id = " + this.prev_adres_id
                     + ";";
             stmt.executeUpdate(sql);
-            System.out.println("UPDATE");
+            System.out.println("UPDATE adres");
 
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());

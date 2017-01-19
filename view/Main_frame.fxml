@@ -6,8 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
    <children>
       <BorderPane layoutX="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -23,7 +22,7 @@
                     <MenuItem fx:id="adres_menuItem" mnemonicParsing="false" text="Adres" />
                         <MenuItem mnemonicParsing="false" text="Choroba" />
                         <MenuItem mnemonicParsing="false" text="Lek" />
-                        <MenuItem mnemonicParsing="false" text="Lekarz" />
+                        <MenuItem fx:id="adres_menuItem" mnemonicParsing="false" text="Lekarz" />
                         <MenuItem mnemonicParsing="false" text="Oddzial" />
                         <MenuItem mnemonicParsing="false" text="Szpital" />
                         <MenuItem mnemonicParsing="false" text="Uczulenie" />
