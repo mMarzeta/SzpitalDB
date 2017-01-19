@@ -1,6 +1,12 @@
 Projekt na przedmiot BazyDanych.
-
 Używając JDBC łączy się z bazą PostgreSQL.
 Umożliwia edycję, dodawanie, usuwanie, przeglądanie oraz wyświetlanie statystyk z bazy danych.
 GUI utworzone w JavaFX.
 Model MVC.
+
+
+Academic project for subject DataBases.
+Uses JDB to connect to PostgreSQL database.
+Allows edit, add, delete, view and calculate statistics from database.
+JavaFX is responsible for GUI.
+MVC model.
